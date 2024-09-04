@@ -1,0 +1,111 @@
+/* Conteneur de la page d'enregistrement */
+.register-page {
+  height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+  width: 100vw;  /* Occupe toute la largeur de la fenêtre */
+  display: flex;
+  align-items: center;  /* Centre verticalement le formulaire */
+  justify-content: center; /* Centre horizontalement le formulaire */
+  background-color: #f3f4f6; /* Une couleur de fond douce */
+  margin: 0; /* Supprime toute marge */
+  padding: 0; /* Supprime tout padding */
+}
+
+/* Conteneur du formulaire */
+.register-form-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Une ombre subtile pour l'élévation */
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  margin: 0; /* Supprime toute marge pour éviter les décalages */
+}
+
+/* En-tête du formulaire */
+.register-form-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.register-form-header h1 {
+  font-size: 1.8rem;
+  color: #021f3d;
+  font-weight: 600;
+}
+
+/* Items du formulaire */
+.register-form-item {
+  margin-bottom: 20px;
+}
+
+.register-form-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.register-form-item input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+}
+
+.register-form-item input:focus {
+  border-color: #bd7fc4;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Message d'erreur */
+.register-error-message {
+  color: #e74c3c;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+/* Bouton du formulaire */
+.register-form-button {
+  margin-top: 20px;
+}
+
+.register-form-button button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff66cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.register-form-button button:hover {
+  background-color: #ff1493;
+}
+
+/* Loader */
+.register-loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #e690c6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
